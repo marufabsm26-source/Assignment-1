@@ -1,0 +1,111 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 90px;
+  margin: 24px 0px;
+}
+
+.nav-link ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #575757;
+}
+.nav button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1d4ed8;
+  color: white;
+  width: 150px;
+}
+
+/* nav end */
+
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./image/banner.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  color: white;
+  display: grid;
+  text-align: center;
+  gap: 10px;
+}
+
+.header-content h1{
+  font-size: 80px;
+}
+
+.header-content button{
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1d4ed8;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  justify-self: center;
+  margin-top: 289px;
+}
+/* head end */  
+
+.section-main{
+  text-align: center ;
+  padding: 70px 90px;
+}
+.section-main h2{
+  font-size: 50px;
+  margin-bottom: 56px;
+}
+.section-div-1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  text-align:left ;
+}
+.section-div-2{
+   border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-div-2 img{
+  width: 100%;
+}
+.section-div-3{
+  padding: 30px;
+}
+.section-div-3 span{
+  color: #2563eb;
+font-size: 15px;
+font-weight: 600;
+}
+.section-div-3 h3{
+  margin: 8px 0px  ;
+  font-size: 30px;
+  font-weight:bold ;
+}
+.section-div-3 p{
+  font-size: 15px;
+  color: #575757;
+  font-weight: 400;
+}
