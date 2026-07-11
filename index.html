@@ -83,7 +83,7 @@
           </div>
         </div>
       </section>
-      
+
       <section class="section-card">
         <h2>Secure Your Spot</h2>
         <p class="p">Early-bird pricing ends end august 15, 2026.</p>
@@ -133,5 +133,205 @@
         </div>
       </section>
     </main>
+
+    <!-- 
+DevConf 2026 — "Conference Schedule" section, terminal concept
+Pure HTML + CSS. No JavaScript — day switching via radio/label trick,
+cursor blink via CSS animation.
+ -->
+
+    <section class="schedule-section">
+      <div class="schedule-inner">
+        <div class="schedule-head">
+          <span class="eyebrow">Schedule</span>
+          <h2>$ devconf schedule --format=full</h2>
+          <p class="schedule-sub">
+            Three days, four tracks, zero fluff. Piped straight from the run of
+            show.
+          </p>
+        </div>
+
+        <div class="terminal">
+          <div class="titlebar">
+            <div class="dots">
+              <span class="dot red"></span><span class="dot yellow"></span
+              ><span class="dot green"></span>
+            </div>
+            <div class="filename">devconf@2026 — schedule.log</div>
+            <div class="titlebar-spacer"></div>
+          </div>
+
+          <input type="radio" name="day" id="day1" class="day-input" checked />
+          <input type="radio" name="day" id="day2" class="day-input" />
+          <input type="radio" name="day" id="day3" class="day-input" />
+
+          <div class="tab-bar">
+            <label for="day1" class="tab">day1.sh</label>
+            <label for="day2" class="tab">day2.sh</label>
+            <label for="day3" class="tab">day3.sh</label>
+          </div>
+
+          <div class="terminal-body">
+            <div class="panel panel-1">
+              <div class="prompt-line">
+                <span class="prompt">$</span> cat day1.log
+              </div>
+
+              <div class="entry">
+                <span class="hash">a1b2c3d</span>
+                <span class="type feat">feat:</span>
+                <span class="msg"
+                  >opening keynote — the next decade of code</span
+                >
+                <span class="meta"
+                  ><span class="time">09:00</span
+                  ><span class="path"># Main Stage</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">e4f5a6b</span>
+                <span class="type build">build:</span>
+                <span class="msg">shipping at 4,000 engineers' scale</span>
+                <span class="meta"
+                  ><span class="time">10:30</span
+                  ><span class="path"># Track B · Hall 2</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">7c8d9e0</span>
+                <span class="type docs">docs:</span>
+                <span class="msg">workshop — building for the edge</span>
+                <span class="meta"
+                  ><span class="time">13:00</span
+                  ><span class="path"># Workshop Room 1</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">f1a2b3c</span>
+                <span class="type chore">chore:</span>
+                <span class="msg">welcome reception</span>
+                <span class="meta"
+                  ><span class="time">18:00</span
+                  ><span class="path"># Rooftop Terrace</span></span
+                >
+              </div>
+            </div>
+
+            <div class="panel panel-2">
+              <div class="prompt-line">
+                <span class="prompt">$</span> cat day2.log
+              </div>
+
+              <div class="entry">
+                <span class="hash">2d3e4f5</span>
+                <span class="type feat">feat:</span>
+                <span class="msg">pretraining at the frontier</span>
+                <span class="meta"
+                  ><span class="time">09:30</span
+                  ><span class="path"># Main Stage</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">6a7b8c9</span>
+                <span class="type fix">fix:</span>
+                <span class="msg">securing the AI supply chain</span>
+                <span class="meta"
+                  ><span class="time">11:00</span
+                  ><span class="path"># Track A · Hall 1</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">0d1e2f3</span>
+                <span class="type build">build:</span>
+                <span class="msg">workshop — zero-downtime deploys</span>
+                <span class="meta"
+                  ><span class="time">14:00</span
+                  ><span class="path"># Workshop Room 2</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">4a5b6c7</span>
+                <span class="type chore">chore:</span>
+                <span class="msg">VIP networking dinner</span>
+                <span class="meta"
+                  ><span class="time">19:30</span
+                  ><span class="path"># Riverside Pavilion</span></span
+                >
+              </div>
+            </div>
+
+            <div class="panel panel-3">
+              <div class="prompt-line">
+                <span class="prompt">$</span> cat day3.log
+              </div>
+
+              <div class="entry">
+                <span class="hash">8d9e0f1</span>
+                <span class="type feat">feat:</span>
+                <span class="msg">the future of developer tooling</span>
+                <span class="meta"
+                  ><span class="time">09:30</span
+                  ><span class="path"># Main Stage</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">2b3c4d5</span>
+                <span class="type docs">docs:</span>
+                <span class="msg">panel — where models go from here</span>
+                <span class="meta"
+                  ><span class="time">11:00</span
+                  ><span class="path"># Track A · Hall 1</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">6e7f8a9</span>
+                <span class="type fix">fix:</span>
+                <span class="msg">workshop — threat modeling for AI apps</span>
+                <span class="meta"
+                  ><span class="time">13:30</span
+                  ><span class="path"># Workshop Room 1</span></span
+                >
+              </div>
+              <div class="entry">
+                <span class="hash">0b1c2d3</span>
+                <span class="type chore">chore:</span>
+                <span class="msg">closing remarks &amp; farewell party</span>
+                <span class="meta"
+                  ><span class="time">17:00</span
+                  ><span class="path"># Main Stage</span></span
+                >
+              </div>
+            </div>
+
+            <div class="prompt-line closing">
+              <span class="prompt">$</span> <span class="cursor">&nbsp;</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-cta">
+          <p>
+            Full session list with speakers and rooms drops closer to the event.
+          </p>
+          <a href="#" class="btn-outline">View Full Schedule</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top-div">
+      <div class="footer-div">
+        <img class="img" src="./image/logo-mini.png" alt="" />
+        <p>© 2026 DevConf. All rights reserved.</p>
+        <div class="icons">
+          <a href=""><img src="./icons/icons8-fb-48.png" alt="" /></a>
+          <a href=""><img src="./icons/icons8-instagram-logo-94.png" alt="" /></a>
+          <a href=""><img src="./icons/icons8-linkedin-48.png" alt="" /></a>
+          <a href=""><img src="./icons/icons8-x-50 (1).png" alt="" /></a>
+        </div>
+        <p>Privacy Policy  Terms of Service</p>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
